@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.4" icons="true">  
+  <object id="1" language="java" name="br.com.ernaneluis.servlet.ControllerServlet" project="ProjectManagement" 
+    file="/ProjectManagement/src/br/com/ernaneluis/servlet/ControllerServlet.java" binary="false" 
+    label="controllerServlet" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="88" y="0"/>    
+    <execution id="2">      
+      <position height="63" width="0" x="0" y="110"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="br.com.ernaneluis.controller.LoginController" project="ProjectManagement" 
+    file="/ProjectManagement/src/br/com/ernaneluis/controller/LoginController.java" binary="false" 
+    label="loginController1" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="4">      
+      <position height="21" width="0" x="0" y="131"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="63" width="0" x="0" y="171"/>    
+    </execution>  
+  </object>  
+  <object id="9" language="java" name="br.com.ernaneluis.dao.EmployeeDAO" project="ProjectManagement" 
+    file="/ProjectManagement/src/br/com/ernaneluis/dao/EmployeeDAO.java" binary="false" label="employeeDAO1" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="8">      
+      <position height="21" width="0" x="0" y="192"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="152" width="0" x="0" y="253"/>    
+    </execution>  
+  </object>  
+  <object id="13" language="java" name="br.com.ernaneluis.dao.GenericDAO" project="ProjectManagement" 
+    file="/ProjectManagement/src/br/com/ernaneluis/dao/GenericDAO.java" binary="false" label="genericDAO1" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="12">      
+      <position height="110" width="0" x="0" y="274"/>    
+    </execution>  
+  </object>  
+  <object id="18" language="java" name="br.com.ernaneluis.model.Employee" project="ProjectManagement" 
+    file="/ProjectManagement/src/br/com/ernaneluis/model/Employee.java" binary="false" label="employee" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="342"/>    
+    </execution>  
+  </object>  
+  <object id="19" language="java" name="br.com.ernaneluis.model.Employee" project="ProjectManagement" 
+    file="/ProjectManagement/src/br/com/ernaneluis/model/Employee.java" binary="false" label="employee1" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="15">      
+      <position height="21" width="0" x="0" y="305"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="execute(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="7" operation="login(java.lang.String,java.lang.String):br.com.ernaneluis.model.Employee">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="11" operation="getById(java.lang.Integer)">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="14" operation="getPassword():java.lang.String">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="getEmail():java.lang.String">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>
+</sequence-diagram>
